@@ -26,6 +26,8 @@ app.post('/gift', (req, res) => {
   }
 });
 
+app.get('/', (_req, res) => res.send('Server is up. Use POST /gift'));
+
 app.listen(port, () => {
   console.log(`Listening on port ${port}!`);
 });
