@@ -20,7 +20,7 @@ app.post('/gift', (req, res) => {
     : false;
 
   if (isInTheList) {
-    res.send("You got a toy robot!");
+    res.send("You got a toy robot!!");
   } else {
     res.send("You are not on the list :(");
   }
